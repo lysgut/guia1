@@ -24,27 +24,21 @@ function binaryFinding(z, y){
     let b = x.length-1
     let c;
     let is;
-    while(a<b-1){
+    while(a<=b){
         c = Math.round((a+b)/2)
         is = x[c]
         if(is > y){
-            b = c
+            b = c-1
         }
         else if(is < y){
-            a = c
+            a = c+1
         }
         else {
             return true
         }
     }
-    if(x[x.length-1] === y || x[0] === y){
-        return true
-    }
-    else{
-        return false
-    }
+    return false
 
 }
 
 console.log(binaryFinding([3,423,5,5,34,45,56,77,12,34], 8))
-//ESTA NO ES LA FORMA MAS EFICIENTE
