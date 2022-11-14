@@ -47,3 +47,4 @@ function binaryFinding(z, y){
 }
 
 console.log(binaryFinding([3,423,5,5,34,45,56,77,12,34], 8))
+//ESTA NO ES LA FORMA MAS EFICIENTE
